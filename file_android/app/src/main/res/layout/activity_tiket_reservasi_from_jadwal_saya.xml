@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TiketReservasi">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarTiketReservasi"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            tools:text="Tiket Reservasi"
+            android:id="@+id/toolbar_text"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/ToolbarTiketReservasi">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/TVNamaRS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                tools:text="Nama RS"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:lineHeight="25dp"
+                android:paddingBottom="21dp"
+                android:layout_marginTop="21dp"/>
+
+            <TextView
+                android:id="@+id/TVMedicalCheckUp"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="12dp"
+                android:textSize="14sp"
+                android:lineHeight="19dp"
+                android:layout_below="@+id/TVNamaRS"
+                tools:text="Medical Check Up"/>
+
+            <TextView
+                android:id="@+id/HargaPelayanan"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginRight="12dp"
+                android:layout_below="@+id/TVNamaRS"
+                tools:text="Rp. 1.000.000"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="14dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="8dp"
+                android:background="#CACCCF"
+                android:layout_below="@+id/TVMedicalCheckUp"/>
+
+            <TextView
+                android:id="@+id/TVTanggal"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:lineHeight="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@+id/TVMedicalCheckUp"
+                android:text="Tanggal" />
+
+            <TextView
+                android:id="@+id/TanggalPelayanan"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginRight="12dp"
+                android:layout_below="@+id/HargaPelayanan"
+                tools:text="Rp. 1.000.000"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="14dp"/>
+
+            <TextView
+                android:id="@+id/TVWaktu"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:lineHeight="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@+id/TVTanggal"
+                android:text="Waktu" />
+
+            <TextView
+                android:id="@+id/WaktuPelayanan"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginRight="12dp"
+                android:layout_below="@+id/TanggalPelayanan"
+                tools:text="Rp. 1.000.000"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="14dp"/>
+
+            <LinearLayout
+                android:id="@+id/LLNomorAntrianDanKodeTiket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVWaktu"
+                android:orientation="horizontal"
+                android:layout_marginTop="28dp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/TVNomorAntrian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:text="A1"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:text="NO. ANTRIAN"
+                        android:layout_marginTop="8dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/TVNomorAntrian"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/TVKodeTiket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:text="A1"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16sp"
+                        android:text="KODE TIKET"
+                        android:layout_marginTop="8dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/TVKodeTiket"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/IVBarcode"
+                android:layout_width="179dp"
+                android:layout_height="88dp"
+                android:layout_marginTop="21.43dp"
+                android:src="@drawable/barcode_sementara"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/LLNomorAntrianDanKodeTiket"/>
+
+            <Button
+                android:id="@+id/btn_cetak"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="25.48dp"
+                android:text="Cetak Tiket"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="21dp"
+                android:textSize="14sp"
+                android:background="@drawable/clikable_button_bg"
+                android:layout_below="@+id/IVBarcode"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

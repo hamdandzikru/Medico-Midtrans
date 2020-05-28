@@ -1,0 +1,119 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/IVBacaan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:src="@drawable/ic_verifikasipasien"
+                app:layout_collapseMode="parallax"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarReadArticle"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:layout_collapseMode="pin" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/TVJudulBacaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="22dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:lineHeight="40dp"
+                android:text="baris 1 \nbaris 2"/>
+
+            <LinearLayout
+                android:id="@+id/LLInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_below="@+id/TVJudulBacaan"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/TVPublisher"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="16dp"
+                    android:lineHeight="16dp"
+                    android:textColor="@color/Black80"
+                    android:text="medico official"/>
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/elips_dot"/>
+
+                <TextView
+                    android:id="@+id/TVPublishTime"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="16dp"
+                    android:lineHeight="16dp"
+                    android:textColor="@color/Black80"
+                    android:text="29 Juni 2019"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TeksBacaan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/LLInfo"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="15dp"
+                android:textSize="14sp"
+                android:lineHeight="19dp"
+                android:textColor="@color/black"
+                android:text="@string/article_content"/>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

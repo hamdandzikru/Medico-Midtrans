@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VerifikasiPasienLamaFPF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarVerifikasiPasienLama"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/toolbar_text"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:gravity="center"
+            android:textColor="@color/Black100"
+            android:textSize="18sp"
+            tools:text="Verifikasi Pasien" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ToolbarVerifikasiPasienLama"
+        app:layout_constraintBottom_toTopOf="@+id/view">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/TVNomorRekamMedis"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="17dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/NomorRekamMedis"
+                android:textColor="@color/Black100"
+                android:textSize="15sp"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <EditText
+                android:id="@+id/ETNomorRekamMedis"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:paddingLeft="17dp"
+                android:hint="@string/MasukanNomorRekamMedis"
+                android:background="@drawable/bg_jenis_pasien"
+                app:layout_constraintTop_toBottomOf="@+id/TVNomorRekamMedis"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/TVPeringatanNomorRekamMedis"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text="Nomor Rekam Medis tidak ditemukan"
+                android:textColor="#F44336"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="17dp"
+                app:layout_constraintTop_toBottomOf="@id/ETNomorRekamMedis"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/TVNama"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:text="Nama"
+                android:textSize="15sp"
+                android:textColor="@color/Black100"
+                android:lineHeight="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="17dp"
+                app:layout_constraintTop_toBottomOf="@+id/ETNomorRekamMedis"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/ETNama"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="12dp"
+                android:hint="@string/MasukanNamaLengkapSesuaiKTP"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:textColorHint="#CACCCF"
+                android:background="@drawable/bg_jenis_pasien"
+                app:layout_constraintTop_toBottomOf="@+id/TVNama" />
+
+            <TextView
+                android:id="@+id/TVPeringatanNama"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text="Format Nama Salah"
+                android:textColor="#F44336"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="17dp"
+                app:layout_constraintTop_toBottomOf="@id/ETNama"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/TVNIK"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:text="NIK"
+                android:layout_marginTop="16dp"
+                android:textSize="15sp"
+                android:textColor="@color/Black100"
+                android:lineHeight="20dp"
+                android:layout_marginStart="17dp"
+                app:layout_constraintTop_toBottomOf="@+id/ETNama"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/ETNIK"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="12dp"
+                android:hint="@string/MasukanNIK"
+                android:textColorHint="#CACCCF"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/bg_jenis_pasien"
+                app:layout_constraintTop_toBottomOf="@+id/TVNIK" />
+
+            <TextView
+                android:id="@+id/TVPeringatanNIK"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text="Format NIK Salah"
+                android:textColor="#F44336"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="17dp"
+                app:layout_constraintTop_toBottomOf="@id/ETNIK"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/TVTL"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:text="Tanggal Lahir"
+                android:layout_marginTop="16dp"
+                android:textSize="15sp"
+                android:textColor="@color/Black100"
+                android:lineHeight="20dp"
+                android:layout_marginStart="17dp"
+                app:layout_constraintTop_toBottomOf="@+id/ETNIK"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <RelativeLayout
+                android:id="@+id/ETTTL"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="12dp"
+                android:hint="@string/MasukanTTL"
+                android:textColorHint="#CACCCF"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/bg_jenis_pasien"
+                app:layout_constraintTop_toBottomOf="@+id/TVTL" >
+                <TextView
+                    android:id="@+id/hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/MasukanTTL"
+                    android:textColor="#38000000"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/tanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/MasukanTTL"
+                    android:textColor="#000000"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/TVPeringatanTTL"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text="Masukan Tanggal Lahir"
+                android:textColor="#F44336"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="17dp"
+                app:layout_constraintTop_toBottomOf="@id/ETTTL"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/TVAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:text="Alamat"
+                android:layout_marginTop="16dp"
+                android:textSize="15sp"
+                android:textColor="@color/Black100"
+                android:lineHeight="20dp"
+                android:layout_marginStart="17dp"
+                app:layout_constraintTop_toBottomOf="@+id/ETTTL"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/ETAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="12dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:hint="@string/MasukanAlamatSesuaiKTP"
+                android:textColorHint="#CACCCF"
+                android:background="@drawable/bg_jenis_pasien"
+                app:layout_constraintTop_toBottomOf="@+id/TVAlamat" />
+
+            <TextView
+                android:id="@+id/TVPeringatanAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text="Masukan Alamat"
+                android:textColor="#F44336"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="17dp"
+                app:layout_constraintTop_toBottomOf="@id/ETAlamat"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/BtnGoToPilihJadwal"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="26dp"
+        android:text = "Selanjutnya"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/clikable_button_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

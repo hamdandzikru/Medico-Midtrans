@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">medico</string>
+    <string name="app_desc">medico memberikan kemudahan membuat antrian di rumah sakit, klinik atau dokter favorit kalian.</string>
+    <string name="NamaDepan">Nama Depan</string>
+    <string name="NamaBelakang">Nama Belakang</string>
+    <string name="JenisKelamin">Jenis Kelamin</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="nohp">No Hp</string>
+    <string name="BlmDiSet">Belum di set</string>
+    <string name="HospitalDesc">500+ Rumah\nsakit tersedia</string>
+    <string name="DoctorDesc">500+ Dokter\ntersedia</string>
+    <string name="ClinicDesc">500+ Klinik\ntersedia</string>
+    <string name="AmbulanceDesc">24 jam\nambulans siaga</string>
+    <string name="Home">Home</string>
+    <string name="JadwalSaya">Jadwal Saya</string>
+    <string name="Profil">Profil</string>
+    <string name="PasienLama">Pasien Lama</string>
+    <string name="PasienBaru">Pasien Baru</string>
+    <string name="NomorRekamMedis">Nomor Rekam Medis</string>
+    <string name="NomorKK">NomorKK</string>
+    <string name="RumahSakit">Rumah Sakit</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="tim_medico_siap_membantu_anda_24_7">Tim Medico Siap Membantu Anda 24 Jam</string>
+    <string name="frequently_asked_question">Frequently Asked Question</string>
+    <string name="terms_conditions">Terms and Conditions</string>
+    <string name="Nama">Nama</string>
+    <string name="article_content">Pada dasarnya setiap orang pasti ingin memiliki tubuh yang sehat, namun seiring dengan berkembangnya zaman dan kesibukan, terkadang kita mejadi lupa menjalani pola hidup sehat guna menjaga kesehatan. Hasilnya, kita menjadi terjangkit berbagai macam penyakit dan tidak jarang penyakit tersebut adalah penyakit serius.
+Jika kita sudah terkena penyakit, maka akan ada banyak hal yang merepotkan. Kita harus mengeluarkan budget untuk pergi ke dokter dan membeli obat, aktifitas kita menjadi tertunda, dan kita akan merepotkan orang lain karena kita pasti membutuhkan bantuan sehingga mereka harus merawat kita. Ini hanya sebagian hal dari banyaknya kerepotan yang terjadi saat kita sakit. Untuk menghindari hal tersebut, hal yang paling mudah kita lakukan adalah dengan menjalani pola hidup sehat.</string>
+    <string name="article_seek">Pada dasarnya setiap orang pasti ingin memiliki tubuh yang sehat, namun...</string>
+
+    <!--    FAQs-->
+    <string name="desc_method_bayar">Metode pembayaran yang kami gunakan yaitu cash pada rumah sakit/dokter yang dituju</string>
+    <string name="desc_cari_rs">Cara mencari rumah sakit dapat dilakukan dengan mengetikkan nama rumah sakit pada kolom search atau melihat dari lokasi dekat anda</string>
+    <string name="desc_buat_janji">Ketika anda telah membuat janji dengan dokter menggunakan aplikasi ini, maka anda tidak perlu mengonfirmasi ulang ke dokter tersebut</string>
+
+    <!-- Hint Edit Text-->
+    <string name="MasukanNamaLengkapSesuaiKTP"><font size="15">Masukan nama lengkap sesuai KTP</font></string>
+    <string name="MasukanNIK"><font size="15">Masukan Nomor Induk Kependudukan</font></string>
+    <string name="MasukanTTL"><font size="15">DD-MM-YY</font></string>
+    <string name="MasukanAlamatSesuaiKTP"><font size="15">Masukan alamat sesuai KTP</font></string>
+    <string name="MasukanNomorRekamMedis"><font size="15">Contoh : 09765644677</font></string>
+
+
+    <string name="kontak">Kontak</string>
+    <string name="igd">IGD</string>
+    <string name="informasi">Informasi</string>
+    <string name="Email">Email</string>
+
+    <!--Digunakan di JAVA-->
+    <string name="NamaRS">NamaRS</string>
+    <string name="NamaDokter">NamaDokter</string>
+    <string name="JenisLayanan">JenisLayanan</string>
+    <string name="Tampungan">Tampungan</string>
+    <string name="PenyediaLayanan">PenyediaLayanan</string>
+    <string name="WaktuBerobat">WaktuBerobat</string>
+    <string name="Tanggal">Tanggal</string>
+    <string name="Dokter">Dokter</string>
+    <string name="Klinik">Klinik</string>
+    <string name="Ambulans">Ambulans</string>
+    <string name="Layanan">Layanan</string>
+    <string name="IdTicket">IdTicket</string>
+    <string name="DokterPraktek">Dokter Praktek</string>
+    <string name="TanggalLahirPasien">TanggalLahirPasien</string>
+    <string name="NamaPasien">NamaPasien</string>
+    <string name="TTLPasien">TTLPasien</string>
+    <string name="AlamatPasien">AlamatPasien</string>
+    <string name="NIKPasien">NIKPasien</string>
+    <string name="TelahMemilihTanggal">TelahMemilihTanggal</string>
+    <string name="TelahMemilihKelompokLayanan">Telah Memilih Kelompok Layanan</string>
+    <string name="LayananRS">LayananRS</string>
+    <string name="Akun">Akun</string>
+    <string name="TelahMemilihTanggalUntukDokterRSFragment">TelahMemilihTanggalUntukDokterRSFragment</string>
+    <string name="Kelompok">Kelompok</string>
+    <string name="under_construction">Under Construction</string>
+
+    <string name="nomorKK">nomorKK</string>
+</resources>

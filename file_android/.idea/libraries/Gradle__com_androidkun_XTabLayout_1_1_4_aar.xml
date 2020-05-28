@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.androidkun:XTabLayout:1.1.4@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c3c9724224202a5126ff515a60a87f2/jetified-XTabLayout-1.1.4/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c3c9724224202a5126ff515a60a87f2/jetified-XTabLayout-1.1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c3c9724224202a5126ff515a60a87f2/jetified-XTabLayout-1.1.4/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.androidkun/XTabLayout/1.1.4/1d17c84f623d87ad6da6e5f68ac2dc0bbdb8ad39/XTabLayout-1.1.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.androidkun/XTabLayout/1.1.4/c32891fea2e69b1fd5de9738f1ffb89571f8069/XTabLayout-1.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

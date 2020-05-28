@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="131dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/bg_item_layanan_rs_rv"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="131dp">
+        
+        <TextView
+            android:id="@+id/TVLayanan"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:textSize="14sp"
+            tools:text="Nama Layanan"
+            android:textColor="@color/Black100"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        
+        <TextView
+            android:id="@+id/TVHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:textSize="14sp"
+            tools:text="Rp.xxx.xxx"
+            android:textColor="@color/Black100"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/TVDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="fisioterapis adalah lorem ipsum color de amit pici9s dgfd eryrh  vng nrtht tjrj6dras erwr3w ryem, rt4t4se2q 3535 fbrfgh4 rgr j6j6ied fh4th"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/Black80"
+            app:layout_constraintTop_toBottomOf="@+id/TVHarga"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/BtnBuatAntrian"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:text="Buat Antrian"
+            android:textAllCaps="false"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/clikable_button_bg"
+            app:layout_constraintTop_toBottomOf="@+id/TVDesc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

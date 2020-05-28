@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.koushikdutta.ion:ion:2.2.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a00cab4706672b680e66b37bf1e729e/jetified-ion-2.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a00cab4706672b680e66b37bf1e729e/jetified-ion-2.2.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.koushikdutta.ion/ion/2.2.1/f2caaf31fbf5acbb450f6f06987a06d915173564/ion-2.2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.koushikdutta.ion/ion/2.2.1/59a774dbeb8afefe068562f148997f11b89ad70b/ion-2.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

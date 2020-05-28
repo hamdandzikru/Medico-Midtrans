@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    tools:context=".activity.SearchRS">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ToolbarSearchRSNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ToolbarSearchRSNavigation">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/Black10"
+                    app:layout_constraintBottom_toTopOf="@+id/RL"/>
+
+                <RelativeLayout
+                    android:id="@+id/RL"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    app:layout_constraintTop_toBottomOf="parent">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="19dp"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="3dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="19dp"
+                            android:text="Sekitar"
+                            android:textColor="@color/Black80"
+                            android:lineHeight="19dp"/>
+                        <ImageView
+                            android:layout_width="7dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/ic_location"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="11.5dp"/>
+                        <TextView
+                            android:id="@+id/TVKotaSekitar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="19dp"
+                            android:text="Bandung"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="8.5dp"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/ic_dropdown"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="17dp"
+                        android:layout_marginBottom="8dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/Black10"
+                    app:layout_constraintTop_toBottomOf="@+id/RL"/>
+
+                <View
+                    android:id="@+id/SearchBar"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:layout_height="48dp"
+                    app:layout_constraintTop_toBottomOf="@+id/RL"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@color/SearchBarBackground"/>
+
+                <ImageView
+                    android:layout_width="16.73dp"
+                    android:layout_height="17.49dp"
+                    android:layout_marginTop="62dp"
+                    android:layout_marginEnd="35.46dp"
+                    android:src="@drawable/ic_cari"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:text="Cari rumah sakit"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginStart="39dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/Black80"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RecyclerViewSearchRS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginRight="12dp"
+                    app:layout_constrainedHeight="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/SearchBar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:listitem="@layout/searchrs_item" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>

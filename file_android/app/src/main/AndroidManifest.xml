@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.medico">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        tools:replace="android:allowBackup"
+        android:allowBackup="true"
+        android:icon="@mipmap/logosatu"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logosatu"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.Bantuan" />
+        <activity android:name=".activity.tambahdatapasien" />
+        <activity android:name=".activity.datapasien" /> <!-- <dependency> -->
+        <!-- <groupId>com.github.florent37</groupId> -->
+        <!-- <artifactId>expansionpanel</artifactId> -->
+        <!-- <version>1.2.3</version> -->
+        <!-- <type>pom</type> -->
+        <!-- </dependency> -->
+        <activity
+            android:name=".activity.Ambulance"
+            android:label=""
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.Klinik"
+            android:label=""
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.MainActivity" />
+        </activity>
+        <activity android:name=".activity.PilihJadwalLamaFPF" />
+        <activity
+            android:name=".activity.VerifikasiPasienLamaFPF"
+            android:label=""
+            android:parentActivityName=".activity.VerifikasiPasienFromProfilRSFragment" />
+        <activity
+            android:name=".activity.PilihDiagnosisPB"
+            android:label=""
+            android:parentActivityName=".activity.PilihJadwalPBFPF">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.PilihJadwalPBFPF" />
+        </activity>
+        <activity
+            android:name=".activity.PilihJadwalPBFPF"
+            android:label=""
+            android:parentActivityName=".activity.VerifikasiPasienFromProfilRSFragment">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.VerifikasiPasienFromProfilRSFragment" />
+        </activity>
+        <activity android:name=".activity.PilihJadwalLamaFLF" />
+        <activity
+            android:name=".activity.VerifikasiPasienLamaFLF"
+            android:label=""
+            android:parentActivityName=".activity.VerifikasiPasienFromLayananFragment">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.VerifikasiPasienFromLayananFragment" />
+        </activity>
+        <activity
+            android:name=".activity.TicketReservationPBFLF"
+            android:label=""
+            android:parentActivityName=".activity.PilihJadwalPBFLF">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.PilihJadwalPBFLF" />
+        </activity>
+        <activity
+            android:name=".activity.PilihJadwalPBFLF"
+            android:label=""
+            android:parentActivityName=".activity.VerifikasiPasienFromLayananFragment">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.VerifikasiPasienFromLayananFragment" />
+        </activity>
+        <activity
+            android:name=".activity.VerifikasiPasienFromProfilRSFragment"
+            android:label=""
+            android:parentActivityName=".activity.ProfilRS">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.ProfilRS" />
+        </activity>
+        <activity
+            android:name=".activity.VerifikasiPasienFromLayananFragment"
+            android:label=""
+            android:parentActivityName=".activity.ProfilRS">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.ProfilRS" />
+        </activity>
+        <activity
+            android:name=".activity.Profil"
+            android:label=""
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.TiketReservasiFromJadwalSaya"
+            android:label=""
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.TiketResrvasiLama"
+            android:label=""
+            android:parentActivityName=".activity.PilihJadwalLama">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.PilihJadwalLama" />
+        </activity>
+        <activity
+            android:name=".activity.PilihJadwalLama"
+            android:label=""
+            android:parentActivityName=".activity.VerifikasiPasienLama">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.VerifikasiPasienLama" />
+        </activity>
+        <activity
+            android:name=".activity.TiketReservasi"
+            android:label=""
+            android:parentActivityName=".activity.PilihJadwal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.PilihJadwal" />
+        </activity>
+        <activity
+            android:name=".activity.VerifikasiPasienLama"
+            android:label=""
+            android:parentActivityName=".activity.VerifikasiPasien">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.VerifikasiPasien" />
+        </activity>
+        <activity
+            android:name=".activity.ReadArticle"
+            android:label=""
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.PilihJadwal"
+            android:label="Rincian Pengobatan"
+            android:parentActivityName=".activity.VerifikasiPasien">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.VerifikasiPasien" />
+        </activity>
+        <activity
+            android:name=".activity.VerifikasiPasien"
+            android:label="Verifikasi Pasien"
+            android:parentActivityName=".activity.SearchDokter">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.SearchDokter" />
+        </activity>
+        <activity
+            android:name=".activity.ProfilRS"
+            android:parentActivityName=".activity.SearchRS">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.SearchRS" />
+        </activity>
+        <activity
+            android:name=".activity.SearchRS"
+            android:label="Rumah Sakit"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.SearchDokter"
+            android:label="Dokter"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.PilihArtikel"
+            android:label="Artikel"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.SignIn"
+            android:parentActivityName=".activity.OnBoard">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.OnBoard" />
+        </activity>
+        <activity
+            android:name=".activity.SignUpEmail"
+            android:parentActivityName=".activity.SignUp">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.SignUp" />
+        </activity>
+        <activity
+            android:name=".activity.SignUp"
+            android:parentActivityName=".activity.OnBoard">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medico.activity.OnBoard" />
+        </activity>
+        <activity
+            android:name=".activity.OnBoard"
+            android:theme="@style/OnBoardTheme" />
+        <activity
+            android:name=".activity.Chat"
+            android:label="Preferences" >
+            <intent-filter>
+                <action android:name="com.example.medico.activity.Chat" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.splash"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+
+
+
+
+</manifest>

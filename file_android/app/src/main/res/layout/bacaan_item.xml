@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LLBacaanHomeRV"
+    android:layout_width="match_parent"
+    android:layout_height="113dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:weightSum="320"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100">
+        <TextView
+            android:id="@+id/TVJudulBacaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/Black100"
+            android:maxLines="2"
+            android:lineHeight="19dp"
+            tools:text = "Judul Bacaan"
+            android:layout_marginTop="24dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginBottom="26dp"
+            android:layout_above="@+id/view">
+            <TextView
+                android:id="@+id/TVPublisher"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_height="16dp"
+                android:lineHeight="16dp"
+                android:textColor="@color/Black80"
+                tools:text = "Detiik"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="7dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/elips_dot"/>
+
+            <TextView
+                android:id="@+id/TVPublishTime"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_height="16dp"
+                android:lineHeight="16dp"
+                tools:text = "Kemarin"
+                android:textColor="@color/Black80"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E8E8E8"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="220">
+        <ImageView
+            android:id="@+id/IVBacaan"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_foto_profil_bacaan"
+            tools:src="@drawable/bacaan_preview_placeholder"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E8E8E8"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

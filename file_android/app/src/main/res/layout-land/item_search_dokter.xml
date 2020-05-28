@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="131dp"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/bg_item_search_dokter"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/IVProfilDoctor"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/Black80"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:id="@+id/TVNamaDokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/IVProfilDoctor"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:lineHeight="20dp"
+            android:textColor="@color/Black100"
+            tools:text="Dr. Alexander"/>
+
+        <TextView
+            android:id="@+id/TVSpesialis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/IVProfilDoctor"
+            app:layout_constraintTop_toBottomOf="@+id/TVNamaDokter"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:lineHeight="16dp"
+            android:textColor="@color/Black80"
+            tools:text="Spesialis XXX"/>
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="wrap_content"
+            android:layout_height="12.27dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/IVProfilDoctor"
+            app:layout_constraintTop_toBottomOf="@+id/TVSpesialis"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/IVFirstStar"
+                android:layout_width="12.27dp"
+                android:layout_height="12.27dp"
+                android:layout_marginRight="4dp"
+                tools:background="@drawable/yellow_star"/>
+
+            <ImageView
+                android:id="@+id/IVSecondStar"
+                android:layout_width="12.27dp"
+                android:layout_height="12.27dp"
+                android:layout_marginRight="4dp"
+                tools:background="@drawable/yellow_star"/>
+
+            <ImageView
+                android:id="@+id/IVThirdStar"
+                android:layout_width="12.27dp"
+                android:layout_height="12.27dp"
+                android:layout_marginRight="4dp"
+                tools:background="@drawable/yellow_star"/>
+
+            <ImageView
+                android:id="@+id/IVFourthStar"
+                android:layout_width="12.27dp"
+                android:layout_height="12.27dp"
+                android:layout_marginRight="4dp"
+                tools:background="@drawable/yellow_star"/>
+
+            <ImageView
+                android:id="@+id/IVFifthStar"
+                android:layout_width="12.27dp"
+                android:layout_height="12.27dp"
+                tools:background="@drawable/grey_star"/>
+        </LinearLayout>
+
+        <TextView
+        android:id="@+id/TVAngkaRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/LL"
+        app:layout_constraintTop_toBottomOf="@+id/TVSpesialis"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        tools:text="4,8"
+        android:lineHeight="16dp"
+        android:textSize="12sp"
+        android:textColor="@color/Black80"/>
+
+        <Button
+            android:id="@+id/BtnBuatAntrian"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:text="Buat antrian"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/clikable_button_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

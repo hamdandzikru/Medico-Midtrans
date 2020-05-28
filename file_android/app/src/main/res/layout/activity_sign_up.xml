@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="17dp"
+    android:paddingRight="17dp"
+    tools:context=".activity.SignUp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/PBSignUp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/ToolbarSignUp"
+        android:progressTint="@color/blue"
+        android:secondaryProgressTint="#CACCCF"
+        android:progress="50"/>
+    
+    <TextView
+        android:id="@+id/TVDaftarSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@+id/PBSignUp"
+        android:textColor="@color/Black100"
+        android:layout_marginTop="25dp"
+        android:textSize="24sp"
+        android:layout_marginBottom="4dp"
+        android:lineHeight="24dp"
+        android:text="DAFTAR"/>
+
+    <TextView
+        android:id="@+id/TVMasukanBiodataAnda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVDaftarSignUp"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/Black100"
+        android:text="Masukan biodata anda"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TILNamDep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVMasukanBiodataAnda">
+        <EditText
+            android:id="@+id/ETNamaDepan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TVMasukanBiodataAnda"
+            android:hint="Nama Depan" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/WarningDepan"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_below="@+id/TILNamDep"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="24dp"
+        android:text="Nama depan salah"
+        android:textColor="#F44336"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/LogoWarningDepan"
+        android:layout_width="17dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="2dp"
+        android:background="#F44336"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TILNamDep"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TILNamBel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WarningDepan">
+        <EditText
+            android:id="@+id/ETNamaBelakang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Belakang"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/WarningBelakang"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_below="@+id/TILNamBel"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="20dp"
+        android:text="Nama belakang salah"
+        android:textColor="#F44336"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/LogoWarningBelakang"
+        android:layout_width="17dp"
+        android:layout_height="15dp"
+        android:background="#F44336"
+        android:layout_below="@+id/TILNamBel"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/TVJenisKelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_below="@id/WarningBelakang"
+        android:layout_marginBottom="16dp"
+        android:text="Jenis Kelamin" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="174dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="62dp"
+        android:layout_below="@+id/TVJenisKelamin" />
+
+    <Button
+        android:id="@+id/ButtonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/recyclerView"
+        android:background="@drawable/clikable_button_bg"
+        android:text="Selanjutnya"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+</RelativeLayout>
+

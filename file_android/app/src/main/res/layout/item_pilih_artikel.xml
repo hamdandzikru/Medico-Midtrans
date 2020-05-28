@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="131dp"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/bg_item_search_dokter"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/IVArtikel"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/Black80"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:id="@+id/TVJudulBacaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/IVArtikel"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="baris 1 \nbaris 2"/>
+
+        <LinearLayout
+            android:id="@+id/LLInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            app:layout_constraintStart_toEndOf="@+id/IVArtikel"
+            app:layout_constraintTop_toBottomOf="@+id/TVJudulBacaan"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/TVPublisher"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_height="16dp"
+                android:lineHeight="16dp"
+                android:textColor="@color/Black80"
+                android:text="medico official"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="7dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/elips_dot"/>
+
+            <TextView
+                android:id="@+id/TVPublishTime"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_height="16dp"
+                android:lineHeight="16dp"
+                android:textColor="@color/Black80"
+                android:text="29 Juni 2019"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TVTeksBacaan"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/article_seek"
+            android:textColor="@color/Black100"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/IVArtikel"
+            app:layout_constraintTop_toBottomOf="@+id/LLInfo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TVBacaSelengkapnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/IVArtikel"
+            app:layout_constraintTop_toBottomOf="@+id/TVTeksBacaan"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="3dp"
+            android:text="Baca Selengkapnya"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

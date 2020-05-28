@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.midtrans:analytics:1.6.3-SANDBOX@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1bf091f64313caa0281925f97233c1c9/jetified-analytics-1.6.3-SANDBOX/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1bf091f64313caa0281925f97233c1c9/jetified-analytics-1.6.3-SANDBOX/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="19dp"
+    android:paddingBottom="19dp"
+    android:paddingRight="17dp"
+    android:paddingLeft="17dp"
+    tools:context=".activity.OnBoard">
+
+    <TextView
+        android:id="@+id/TVmedico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:textSize="36sp"
+        android:letterSpacing="0.015"
+        android:lineHeight="48dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/app_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@+id/TVmedico"
+        android:lineHeight="19dp"
+        android:textColor="@color/Black80"
+        android:text="@string/app_desc"
+        android:letterSpacing="0.015"
+        android:gravity="center"/>
+    
+    <ImageView
+        android:layout_width="234dp"
+        android:layout_height="185dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ongoing"/>
+    
+    <LinearLayout
+        android:id="@+id/LLOnBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/TVSudahPunyaAkun"
+            android:layout_width="wrap_content"
+            android:textColor="@color/Black80"
+            android:layout_height="match_parent"
+            android:letterSpacing="0.015"
+            android:lineHeight="19dp"
+            android:text="Sudah punya akun ?"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/TVLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:letterSpacing="0.015"
+            android:lineHeight="19dp"
+            android:text=" Login"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/ButtonOnBoard"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_above="@+id/LLOnBoard"
+        android:layout_marginBottom="18dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:letterSpacing="0.015"
+        android:background="@drawable/clikable_button_bg"
+        android:text="Daftar"/>
+
+</RelativeLayout>

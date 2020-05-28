@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: ru.rambler.android:swipe-layout:1.0.14@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5bc743dddb38724e9654eab8c08d2cad/jetified-swipe-layout-1.0.14/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5bc743dddb38724e9654eab8c08d2cad/jetified-swipe-layout-1.0.14/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ru.rambler.android/swipe-layout/1.0.14/32ac3ca568b0537f4e43a1d46c4dcb330224dc1/swipe-layout-1.0.14-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ru.rambler.android/swipe-layout/1.0.14/5e3cc4dca1fd04625aa5fa00f2d9634526777f48/swipe-layout-1.0.14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

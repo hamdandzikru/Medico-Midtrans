@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.scottyab:secure-preferences:v0.1.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c4d374dbab924f628e37b5ba4cc7a664/jetified-secure-preferences-v0.1.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c4d374dbab924f628e37b5ba4cc7a664/jetified-secure-preferences-v0.1.6/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.scottyab/secure-preferences/v0.1.6/ca046cfa2a6bb29226c50f3a9ef0fbda7ee5f748/secure-preferences-v0.1.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.scottyab/secure-preferences/v0.1.6/312fdf46931bef1f4d65dcd2393d6d111d59b0a7/secure-preferences-v0.1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
